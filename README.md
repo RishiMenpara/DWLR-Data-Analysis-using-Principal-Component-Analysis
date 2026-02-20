@@ -35,44 +35,53 @@ PCA helps in:
 
 Let dataset be represented as:
 
-\[
+$$
 X = \{x_1, x_2, ..., x_n\}
-\]
+$$
 
 ### 1️⃣ Standardization
 
-\[
+$$
 Z = \frac{X - \mu}{\sigma}
-\]
+$$
 
 ### 2️⃣ Covariance Matrix
 
-\[
+$$
 C = \frac{1}{n-1} X^T X
-\]
+$$
 
 ### 3️⃣ Eigen Decomposition
 
-\[
+$$
 C v = \lambda v
-\]
+$$
 
 Where:
 
-- \( \lambda \) = Eigenvalues (variance explained)  
-- \( v \) = Eigenvectors (principal components)
+- $\lambda$ = Eigenvalues (variance explained)  
+- $v$ = Eigenvectors (principal components)
 
 ### 4️⃣ Projection to Lower Dimension
 
-\[
-Z_{new} = XW
-\]
+$$
+Z_{\text{new}} = XW
+$$
 
 Where:
 
-- \(W\) = Top \(k\) eigenvectors  
-- \(Z_{new}\) = Reduced dataset  
+- $W$ = Top $k$ eigenvectors  
+- $Z_{\text{new}}$ = Reduced dataset
+### 4️⃣ Projection to Lower Dimension
 
+$$
+Z_{\text{new}} = XW
+$$
+
+Where:
+
+- $W$ = Top $k$ eigenvectors  
+- $Z_{\text{new}}$ = Reduced dataset
 ---
 
 ## 📂 Project Structure
